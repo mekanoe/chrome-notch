@@ -1,0 +1,24 @@
+{
+  "name": "Notch Mode",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "I love Apple so I want a notch on every webpage imaginable (granny smith)",
+  "homepage_url": "https://okano.gay/notch",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "default_locale": "en",
+  "background": {
+    "page": "src/bg/background.html",
+    "persistent": true
+  },
+  "permissions": ["https://*/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://*/*"],
+      "js": ["src/inject/inject.js"]
+    }
+  ]
+}
