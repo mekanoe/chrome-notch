@@ -11,7 +11,8 @@ chrome.extension.sendMessage({}, function (response) {
       const injection = document.createElement("div");
       document.body.appendChild(injection);
       applyStyles(injection, {
-        position: "absolute",
+        position: "fixed",
+        zIndex: 99999,
         top: 0,
         left: 0,
         right: 0,
