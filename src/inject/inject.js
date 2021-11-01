@@ -12,6 +12,7 @@ chrome.extension.sendMessage({}, function (response) {
       document.body.appendChild(injection);
       applyStyles(injection, {
         position: "fixed",
+        pointerEvents: "none",
         zIndex: 99999,
         top: 0,
         left: 0,
